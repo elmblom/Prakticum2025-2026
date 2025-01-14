@@ -7,7 +7,7 @@ $file = "./tomosarts.txt";
 <!DOCTYPE html>
 <html>
 <body>
- 
+<link rel="stylesheet" type="text/css" href="./Form.css">
 <?php
 echo strlen($text);  
 echo "<br>";
@@ -26,16 +26,16 @@ echo file_get_contents($file);
 <form action="name.php" method="POST">
 Namn: <input type="text" name="name"><br>
 Ålder: <input type="text" name="age"><br>
-Nummer 1: <input type="number" name="number1"><br>
-Nummer 2: <input type="number" name="number2"><br>
-Operation: <select type="dropdown" name="operation">
+Nummer 1: <input type="number" name="number1" id="number1"><br>
+Nummer 2: <input type="number" name="number2" id="number2"><br>
+Operation: <select type="dropdown" name="operation" id="operation">
 <option value="+">+</option>
 <option value="-">-</option>
 <option value="*">*</option>
 <option value="/">/</option>
 </select>
 <br>
-<input type="submit">
+<input type="submit" id="submit">
 </form>
 </body>
 </html>
