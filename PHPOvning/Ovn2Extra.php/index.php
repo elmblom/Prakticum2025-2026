@@ -22,6 +22,10 @@ echo "<br>";
 echo file_get_contents($file);
 ?>
 <br>
-
+<form action="name.php" method="POST">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
+</form>
 </body>
 </html>
