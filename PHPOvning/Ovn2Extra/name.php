@@ -40,7 +40,21 @@ echo "<br><br>";
 sort($numbers);
 echo implode(", ", $numbers);
 echo "<br><br>";
-echo "$_POST[number1] $_POST[operation] $_POST[number2] = $answer" ;
+switch ($_POST['operation']) {
+    case '+':
+        $answer = $_POST['number1'] + $_POST['number2'];
+        break;
+    case '-':
+        $answer = $_POST['number1'] - $_POST['number2'];
+        break;
+    case '*':
+        $answer = $_POST['number1'] * $_POST['number2'];
+        break;
+    case '/':
+        $answer = $_POST['number1'] / $_POST['number2'];
+        break;
+}
+echo "$answer";
 ?>
 </body>
 </html>
